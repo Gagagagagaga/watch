@@ -1,0 +1,57 @@
+@import "mixin"
+
+*
+	margin: 0
+	padding: 0
+
+p, h2, h3 
+	padding: 10px
+
+a
+	text-decoration: none
+	color: white
+
+.bg	
+	@include background-size(cover)
+	background-repeat: no-repeat
+	background-position: center
+
+.infoBox
+	display: inline-block
+	@include border-radius(10px)
+	vertical-align: top
+
+.fa
+	color: white
+	position: absolute
+	left: 50%
+	top: 50%
+	@include transform-translate(-50%, -50%)
+
+.container
+	display: inline-block
+	width: 90%
+	margin: 0 5%
+	vertical-align: top
+	font-family: sans-serif
+
+#paralax
+	overflow: hidden
+	position: relative
+
+#paralaxMove
+	position: absolute
+	width: 100%
+	top: 0
+
+.right
+	float: right
+
+@import "navbar"
+@import "mainInform"
+@import "gallery"
+@import "skills"
+@import "space"
+@import "modal"
+@import "paralaxMenu"
+@import "media"

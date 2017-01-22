@@ -1,0 +1,53 @@
+#mainInform
+	background-image: url("../img/BGpic.png")
+	@extend .bg
+
+	.container
+		margin-top: 80px
+
+		& > div
+			width: 45%
+	
+#aboutMe
+	@extend .infoBox
+	background: rgba(186,216,182,0.7)
+	color: rgba(1,53,44,1)
+
+	h2
+		text-align: center
+		font-size: 15px
+		padding: 10px
+		cursor: pointer
+
+	p
+		padding: 10px
+		display: none
+
+#languages
+	@extend .infoBox
+	background: rgba(1,53,44,0.7)
+	color: rgba(186,216,182,1)
+	margin-left: 9%
+
+	.title
+		@include transform-skewX(20deg)
+		display: inline-block
+		margin-top: 20px
+		margin-left: 25px
+		border: 2px solid rgba(0,0,0,0.5)
+		background-color: white
+		color: black
+		cursor: pointer
+		
+		&.active
+			border: 2px solid rgba(255,0,0,1)
+
+	.par
+		p
+			@include animation-delay(1s)
+			opacity: 0
+			display: none
+			
+			&.active
+				opacity: 1
+				display: inline-block

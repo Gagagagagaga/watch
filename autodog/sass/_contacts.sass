@@ -1,0 +1,81 @@
+#contacts
+	background-color: #333
+
+	.container
+		font-size: 0
+		margin: 5vw 15%
+		width: 70%
+
+		&> div
+			display: inline-block
+			vertical-align: top
+
+	.communication
+		width: 30%
+		font-size: 1vw
+		margin-right: 5%
+		color: #e8e8e8
+		text-transform: uppercase
+
+		h2
+			margin-bottom: 1vw
+
+		p
+			margin: 2.5vw 0
+
+		
+		span
+			display: block
+			margin: 1vw 0
+
+		hr
+			border-color: #e8e8e8
+			margin: 2vw 0
+
+		button
+			background-color: #ef0b0b
+			border: none
+			padding: 1vw 2vw
+			margin: 1.5vw 0
+			text-transform: uppercase
+			color: white
+			font-weight: 700
+
+	.address
+		width: 65%
+		line-height: 110%
+
+	.mark
+		color: #ef0b0b
+
+	.number
+		width: 100%
+		font-size: 2vw
+		margin: 1.5vw 0
+
+	.social_net
+		font-size: 0
+
+		li
+			position: relative
+			display: inline-block
+			margin: 1vw 1%
+			height: 2.5vw
+			width: 2.5vw
+			font-size: 2vw
+			background-color: #e8e8e8
+			@include border-radius(50%)
+
+		.fa
+			position: absolute
+			color: #333
+			@include transform-translate(-50%, -50%)
+			left: 50%
+			top: 50%
+
+	.map	
+		width: 65%
+
+	iframe
+		display: inline-block
+		width: 100%

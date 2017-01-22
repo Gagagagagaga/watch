@@ -1,0 +1,64 @@
+#order
+	font-size: 0
+	position: relative
+	
+	&>div 
+		vertical-align: top
+		display: inline-block
+		text-align: center
+		width: 50%
+		height: 35vw
+
+	.opinions
+		display: inline-block
+		border-top: 0.3vw solid #eee
+		background-color: #eee
+		box-sizing: border-box
+		overflow: hidden
+
+		.slider_window
+			position: relative
+		.slider_block
+			position: absolute
+			height: 30vw
+			text-align: left
+		
+		.profile_item
+			@include box-sizing(border-box)
+			padding: 3vw 13vw
+			display: inline-block
+			text-align: left
+
+			.face
+				margin-right: 2vw
+
+
+		.slider
+			margin-top: 1vw
+
+			li
+				display: inline-block
+				background-color: white
+				@include border-radius(50%)
+				width: 1vw
+				height: 1vw
+				margin: 0.5vw
+				margin-top: 1.5vw
+				cursor: pointer
+
+			.active
+				background-color: red
+				border: 0.15vw solid white
+				width: 0.7vw
+				height: 0.7vw
+
+
+
+	.offer
+		position: absolute
+		@include transform-translate(-50%, -50%)
+		width: 17vw
+		top: 75%
+		left: 50%
+
+

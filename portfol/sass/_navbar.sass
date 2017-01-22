@@ -1,0 +1,62 @@
+nav
+	position: absolute
+	width: 100%
+	background: rgba(0,0,0,0.5)
+	text-align: right
+	@include transition(background, 1s, ease-in-out) 
+	z-index: 1
+
+	*
+		display: inline-block
+
+.label
+	width: 19%
+	text-align: left
+	vertical-align: middle
+
+	a
+		$marginHorizontal: 7px
+		margin-top: $marginHorizontal
+		margin-bottom: $marginHorizontal
+
+
+#barBut
+	display: none
+	font-size: 30px
+	background: rgba(0,0,0,0)
+	border: none
+	color: white
+	cursor: pointer
+	position: absolute
+	right: 0
+	top: 7px
+
+	.fa
+		position: static
+		@include transform-translate(0, 0)
+		
+#menu
+	width: 70%
+	margin-left: 10%
+	text-align: left
+
+.items
+	width: 55% 
+
+	&.right
+		width: 29%
+		text-align: right
+
+	a
+		$marginHorizontal: 13px
+		margin-top: $marginHorizontal
+		margin-bottom: $marginHorizontal
+
+	li
+		$marginVertical: 3%
+		margin-left: $marginVertical
+		margin-right: $marginVertical
+		border-top: 3px solid rgba(0,0,0,0)
+		
+		&:hover
+			border-top: 3px solid white

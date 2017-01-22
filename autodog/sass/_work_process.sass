@@ -1,0 +1,103 @@
+#work_process
+	*
+		vertical-align: middle
+	
+	.container
+		margin: 2vw
+		text-align: center
+
+
+	h2, .work_process_point
+		display: inline-block
+		width: 25%
+		margin: 2.5% 2.5%
+		text-align: left
+
+	h2
+		display: inline-block
+		vertical-align: top
+		text-align: center
+
+	.work_process_point
+		position: relative
+		height: 5vw
+		font-size: 1.5vw
+		text-align: center
+
+		.icon
+			display: inline-block
+			width: 4vw
+			height: 4vw
+			position: relative
+			background-color: red
+			@include border-radius(50%)
+
+		.fa
+			font-size: 2.5vw
+			color: white
+			position: absolute
+			@include transform-translate(-50%, -50%)
+			top: 50%
+			left: 50%
+
+		p
+			display: inline-block
+			width: 15vw
+			margin-left: 2vw
+
+		.number_box
+			position: absolute
+			background-color: #333
+			color: white
+			width: 2vw
+			height: 2vw
+			@include transform-translate(-75%, -75%)
+			@include border-radius(50%)
+			left: 100%
+			top: 100%
+
+		.number
+			position: absolute
+			@include transform-translate(-50%, -50%)
+			left: 50%
+			top: 50%
+
+		.arrow
+			position: absolute
+			@include transform-translate(0, -50%)
+			width: 2vw
+
+		&:nth-child(2)
+			img
+				left: 100%
+				top: 50%
+
+		&:nth-child(3)
+			img
+				left: 40%
+				top: 120%	
+				@include transform-rotate(90deg)		
+
+	.reverce
+		direction: rtl
+		display: inline-block
+		width: 100%
+	
+		.work_process_point
+			direction: ltr
+
+			&:nth-child(1)
+				img
+					display: none 
+
+			&:nth-child(3)
+				img
+					left: 100%
+					top: 40%	
+					@include transform-rotate(180deg)									
+			
+			&:nth-child(2)
+				img
+					left: 100%
+					top: 40%	
+					@include transform-rotate(180deg)		
