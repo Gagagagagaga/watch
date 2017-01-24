@@ -1,0 +1,27 @@
+@import "mixin"
+
+*
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	color: white
+
+.container
+	display: inline-block
+	width: 90%
+	margin: 0 5%
+	vertical-align: top
+	font-family: sans-serif	
+
+.bg	
+	@include background-size(cover)
+	background-repeat: no-repeat
+	background-position: center
+
+
+@import "banner.sass"
+@import "about.sass"
+@import "partners.sass"
+@import "footer.sass"

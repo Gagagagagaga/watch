@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.container {
+  display: inline-block;
+  width: 90%;
+  margin: 0 5%;
+  vertical-align: top;
+  font-family: sans-serif; }
+
+.bg, header, #about, #partners, #partners .partners_list a, footer {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+header {
+  background-image: url("../img/banner_bg.png");
+  background-position: top;
+  text-align: center;
+  color: white; }
+  header h1 {
+    text-transform: uppercase;
+    font-weight: 100; }
+  header p {
+    font-weight: 100; }
+  header img {
+    width: 5%;
+    margin-top: 50px; }
+  header article {
+    font-weight: 100;
+    font-size: 30px;
+    width: 50%;
+    padding: 250px 25%;
+    padding-top: 150px;
+    font-family: Cambria, Georgia, serif; }
+
+#about {
+  background-color: #fbfbf9;
+  background-image: url("../img/about_bg.png");
+  background-position: right;
+  background-size: contain;
+  color: #47535a; }
+  #about .container {
+    margin: 150px 10%;
+    width: 80%;
+    margin-bottom: 200px; }
+  #about h2, #about p {
+    width: 35%;
+    margin-bottom: 20px;
+    font-weight: 100; }
+  #about h2 {
+    font-family: Cambria, Georgia, serif; }
+  #about p {
+    font-size: 12px;
+    line-height: 150%; }
+
+#partners {
+  text-align: center;
+  color: white;
+  background-image: url("../img/partners_bg.png"); }
+  #partners .container {
+    margin-top: 5vw;
+    margin-bottom: 5vw; }
+  #partners h2 {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Cambria, Georgia, serif; }
+  #partners p {
+    margin: 3vw; }
+  #partners .partners_list {
+    font-size: 5vw; }
+    #partners .partners_list a {
+      margin: 0.8vw 0;
+      vertical-align: middle;
+      font-size: 18px;
+      display: inline-block;
+      width: 27%;
+      height: 150px;
+      border: 0.1vw solid white;
+      background-size: 20vw; }
+    #partners .partners_list img {
+      display: inline-block; }
+
+footer {
+  text-align: center;
+  color: #a6a6a6;
+  background-color: #f3f3f1;
+  background-image: url("../img/footer_bg.png");
+  background-position: bottom;
+  background-size: contain; }
+  footer .container {
+    margin-top: 7vw;
+    margin-bottom: 15vw; }
+  footer h2 {
+    text-transform: uppercase;
+    font-weight: 100; }
+  footer .logo {
+    width: 5%; }
+  footer article {
+    font-size: 12px;
+    margin: 2vw;
+    display: inline-block;
+    line-height: 200%;
+    max-width: 39%;
+    color: #545454; }
+    footer article a {
+      display: inline;
+      color: red; }
+  footer .brands {
+    display: inline-block;
+    border-top: 0.1vw solid #a6a6a6;
+    width: 80%;
+    line-height: 80%;
+    font-size: 10vw; }
+    footer .brands .logo {
+      width: 10%; }
+
+/*# sourceMappingURL=style.css.map */
